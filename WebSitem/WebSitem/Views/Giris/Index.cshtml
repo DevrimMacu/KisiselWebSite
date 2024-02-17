@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Giriş Ekranı</title>
+    <link rel="stylesheet" href="~/web_Admingiriş/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <img src="~/web_Admingiriş/img/person-man.png" class="admin-img">
+            <h2>Admin Giriş Ekranı</h2>
+            @using (Html.BeginForm("Index", "Giris", FormMethod.Post))
+            {
+                <div class="txtb">
+                    <input type="text" name="kullaniciAdi" placeholder="Kullanıcı Adı">
+                </div>
+                <div class="txtb">
+                    <input type="password" name="sifre" placeholder="<PASSWORD>">
+                </div>
+
+                <input type="submit" class="logbtn" value="Giriş Yap">
+
+            }
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
